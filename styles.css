@@ -1,9 +1,17 @@
-section {
+#main {
     height: 100vh;
 }
 
 body {
-    background: aqua;
+    background: rgb(0, 0, 0);
+}
+
+.jumbotron {
+    padding: 10rem 0;
+}
+
+main {
+height: 100vh;
 }
 
 
