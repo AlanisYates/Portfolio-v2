@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    font-family: Montserrat;
+}
+
 #main {
     height: 100vh;
 }
@@ -6,9 +12,8 @@ body {
     background: rgb(0, 0, 0);
 }
 
-.jumbotron {
-    padding: 10rem 0;
-}
+
+
 
 main {
 height: 100vh;
