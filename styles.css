@@ -1,24 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap");
 * {
-    font-family: Montserrat;
+  font-family: Montserrat;
+}
+
+a {
+  color: white;
 }
 
 #main {
-    height: 100vh;
+  height: 100vh;
+}
+
+.main-primary {
+  color: white;
+  font-size: 130px;
+  font-weight: 600;
+}
+
+.main-secondary {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.main-button {
+  background: none;
+  padding: 12px 30px;
+  color: none;
+  border: 2px solid;
+  border-radius: 16px;
+  outline: none;
+  font-size: 18px;
+}
+
+.main-button:hover {
+  background: #616161;
+}
+
+.nounderline {
+  text-decoration: none !important;
+  color: white;
+}
+.nounderline:hover {
+  color: white;
+  transition: all 0.2s ease-out;
 }
 
 body {
-    background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
 }
-
-
-
 
 main {
-height: 100vh;
+  height: 100vh;
 }
 
+.jumbotron {
+  background: rgb(255, 255, 255);
+}
 
+.icons {
+  margin-top: 15px;
+}
 
+.icons a {
+  padding: 0.4rem;
+}
 
+.icons a:hover {
+  color: #616161;
+  transition: all 0.2s ease-out;
+}
