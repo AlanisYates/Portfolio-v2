@@ -13,24 +13,23 @@ a {
 
 .main-primary {
   color: white;
-  font-size: 130px;
+  font-size: 40px;
   font-weight: 600;
 }
 
 .main-secondary {
   color: white;
-  font-size: 40px;
+  font-size: 15px;
   font-weight: 300;
 }
 
 .main-button {
   background: none;
-  padding: 12px 30px;
   color: none;
   border: 2px solid;
   border-radius: 16px;
   outline: none;
-  font-size: 18px;
+  font-size: 10px;
 }
 
 .main-button:hover {
@@ -69,4 +68,23 @@ main {
 .icons a:hover {
   color: #616161;
   transition: all 0.2s ease-out;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
