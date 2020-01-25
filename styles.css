@@ -75,10 +75,29 @@ main {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .main-primary {
+    font-size: 80px;
+  }
+
+  .main-secondary {
+    font-size: 25px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .main-primary {
+    font-size: 110px;
+  }
+
+  .main-secondary {
+    font-size: 35px;
+  }
+
+  .main-button {
+    border-radius: 20px;
+    font-size: 18px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
