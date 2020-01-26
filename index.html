@@ -20,13 +20,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Alanis Yates</title>
   </head>
-  <body>
+  <body data-spy="scroll">
     <!-- NAVBAR  -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-      <a href="#" class="navbar-brand">Alanis Yates</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a href="#main" class="navbar-brand">Alanis Yates</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +42,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Contact</a>
@@ -51,13 +52,13 @@
     </nav>
 
     <!-- Landing Page -->
-    <section id="main">
+    <div id="main" class="main">
       <div class="h-100 d-flex justify-content-center align-items-center">
         <div class="container text-center">
           <h1 class="main-primary">Alanis Yates</h1>
           <h5 class="main-secondary">Full Stack Developer</h5>
           <button type="button" class="btn btn-dark main-button">
-            <a class="nounderline" href="#"> View Projects </a>
+            <a class="nounderline" href="#projects"> View Projects </a>
           </button>
           <div class="icons">
             <a href="https://www.linkedin.com/in/alanis-yates/" target="blank"
@@ -68,9 +69,8 @@
             ></a>
           </div>
         </div>
-        
       </div>
-    </section>
+    </div>
 
     <section class="jumbotron jumbotron-fluid">
       <div class="h-100 d-flex justify-content-center align-items-center">
@@ -115,7 +115,7 @@
     </section>
 
     <!-- Projects -->
-    <main>
+    <div id="projects" class="main">
       <h1 class="text-center">Projects</h1>
       <div class="py-5">
         <div class="container">
@@ -155,7 +155,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -174,5 +174,13 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Add scrollspy to <body>
+      $("body").scrollspy({ target: ".navbar", offset: 220 });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>
