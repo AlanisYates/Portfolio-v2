@@ -174,13 +174,12 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Add scrollspy to <body>
-      $("body").scrollspy({ target: ".navbar", offset: 220 });
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
     <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 600,
+        offset: 70
+      });
     </script>
   </body>
 </html>
